@@ -1,0 +1,34 @@
+{
+    "name": "xgc/symfony-utils-bundle",
+    "license": "MIT",
+    "require": {
+        "symfony/framework-bundle": "*",
+        "sensio/framework-extra-bundle": "* "
+    },
+    "autoload": {
+        "psr-4": {
+            "XgcSymfonyHelperBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Javier Gonzalez Cuadrado",
+            "email": "xgc1986@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "bruli/php-git-hooks": "^5.1"
+    },
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "bin-dir": "bin"
+    }
+}
