@@ -2,8 +2,8 @@
     "name": "xgc/symfony-utils-bundle",
     "license": "MIT",
     "require": {
-        "symfony/framework-bundle": "*",
-        "sensio/framework-extra-bundle": "* "
+        "sensio/framework-extra-bundle": "* ",
+        "symfony/framework-bundle": "*"
     },
     "autoload": {
         "psr-4": {
@@ -22,7 +22,8 @@
         }
     ],
     "require-dev": {
-        "bruli/php-git-hooks": "^5.1"
+        "bruli/php-git-hooks": "^5.1",
+        "symfony/browser-kit": "*"
     },
     "config": {
         "preferred-install": {
@@ -30,5 +31,13 @@
         },
         "sort-packages": true,
         "bin-dir": "bin"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "PhpGitHooks\\Infrastructure\\Composer\\ConfiguratorScript::buildConfig"
+        ],
+        "post-update-cmd": [
+            "PhpGitHooks\\Infrastructure\\Composer\\ConfiguratorScript::buildConfig"
+        ]
     }
 }
