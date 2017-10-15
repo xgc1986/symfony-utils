@@ -9,7 +9,7 @@ use Throwable;
 /**
  * Class EntityNotFoundException
  *
- * @package App\Exception
+ * @package XgcSymfonyUtilsBundle\Exception
  */
 class EntityNotFoundException extends Exception
 {
